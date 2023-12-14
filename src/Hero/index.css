@@ -1,0 +1,54 @@
+/***************/
+/* HERO STYLES */
+/***************/
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 3.2rem;
+  height: 100vh;
+  color: #fff;
+}
+
+.hero-content {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.hero-upper-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*********************/
+/* BACKGROUND STYLES */
+/*********************/
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../public/images/hero-background.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+}
+
+/******************/
+/* CONTENT STYLES */
+/******************/
+.hero-description {
+  font-size: 3.2rem;
+}
+
+.hero-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
