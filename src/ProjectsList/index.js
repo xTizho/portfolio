@@ -3,12 +3,16 @@ import Project from "../Project";
 
 function ProjectsList() {
   return (
-    <main className="projects">
+    <main className="projects light-background">
       <div className="container">
-        <h2 className="heading-secondary">Projects</h2>
-        <Project />
-        <Project />
-        <Project />
+        <h2 className="projects-heading heading-secondary" id="projects">
+          Projects
+        </h2>
+        <div className="project-list">
+          <Project />
+          <Project />
+          <Project />
+        </div>
       </div>
     </main>
   );

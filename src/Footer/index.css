@@ -1,0 +1,17 @@
+/*****************/
+/* FOOTER STYLES */
+/*****************/
+.footer {
+  text-align: center;
+  padding: 3.2rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-top: 0.8rem;
+
+  font-size: 1.6rem;
+  list-style-type: none;
+}

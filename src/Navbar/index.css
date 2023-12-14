@@ -6,14 +6,6 @@
   justify-content: space-between;
 }
 
-/***************/
-/* LOGO STYLES */
-/***************/
-.logo {
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-
 /****************/
 /* LINKS STYLES */
 /****************/
@@ -23,15 +15,4 @@
 
   font-size: 3.2rem;
   list-style: none;
-}
-
-.link:any-link {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s all;
-}
-
-.link:hover,
-.link:active {
-  color: #40C057;
 }

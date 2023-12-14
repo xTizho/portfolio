@@ -1,0 +1,15 @@
+/***************/
+/* LOGO STYLES */
+/***************/
+.logo:any-link {
+  color: #f1f3f5;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo:hover,
+.logo:active {
+  color: #dee2e6;
+}

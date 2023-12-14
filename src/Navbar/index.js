@@ -1,18 +1,14 @@
 import "./index.css";
+import Logo from "../Logo";
 
 function Navbar() {
   return (
     <header className="navbar">
-      <a className="logo">
-        <strong className="primary-green">T</strong>
-        imothy
-        <strong className="primary-green">Z</strong>
-        hong
-      </a>
+      <Logo />
       <nav>
         <ul className="links">
           <li>
-            <a className="link" href="#">
+            <a className="link" href="#projects">
               Projects
             </a>
           </li>

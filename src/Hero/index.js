@@ -8,7 +8,7 @@ function Hero() {
       <div className="background-image"></div>
       <div className="container hero">
         <Navbar />
-        <div className="hero-content">
+        <div className="hero-content light-white">
           <div className="hero-upper-container">
             <h1 className="heading-primary">
               My name is<br></br>
