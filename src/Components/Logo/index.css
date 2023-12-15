@@ -1,0 +1,7 @@
+/***************/
+/* LOGO STYLES */
+/***************/
+.logo:any-link {
+  fill: #f1f3f5;
+  transition: 0.3s all;
+}

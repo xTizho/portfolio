@@ -1,8 +1,8 @@
 import "./index.css";
 
-function Project() {
+function Project({ reverse }) {
   return (
-    <section className="project">
+    <section className={"project " + (reverse ? "img-right" : "img-left")}>
       <img
         className="project-img"
         src={process.env.PUBLIC_URL + "/images/hero-background.jpg"}

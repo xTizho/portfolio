@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 /*****************/
 /* GLOBAL STYLES */
 /*****************/
@@ -11,23 +13,26 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
-/*******************/
-/* REUSABLE STYLES */
-/*******************/
+/**************************/
+/* REUSABLE LAYOUT STYLES */
+/**************************/
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
+/************************/
+/* RESUABLE TEXT STYLES */
+/************************/
 .heading-primary {
   font-size: 9.6rem;
   line-height: 1.1;
@@ -50,6 +55,50 @@ html {
   color: #40c057;
 }
 
+.tooltip {
+  position: relative;
+}
+
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 120%;
+
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.tooltip:before {
+  content: attr(dataText);
+
+  margin-right: 10px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+
+  font-size: 1.6rem;
+  background-color: #40c057;
+  color: #f1f3f5;
+  text-align: center;
+}
+
+.tooltip:after {
+  content: "";
+
+  margin-right: -5px;
+  border: 8px solid #40c057;
+  border-color: transparent transparent transparent #40c057;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+  opacity: 1;
+}
+
+/*************************/
+/* RESUABLE COLOR STYLES */
+/*************************/
 .primary-green {
   color: #40c057;
 }

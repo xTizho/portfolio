@@ -1,7 +1,7 @@
 import "./App.css";
-import Hero from "./Hero";
-import ProjectsList from "./ProjectsList";
-import Footer from "./Footer";
+import Hero from "./Components/Hero";
+import ProjectsList from "./Components/ProjectsList";
+import Footer from "./Components/Footer";
 
 function App() {
   return (

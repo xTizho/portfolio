@@ -9,9 +9,9 @@ function ProjectsList() {
           Projects
         </h2>
         <div className="project-list">
-          <Project />
-          <Project />
-          <Project />
+          <Project reverse={false} />
+          <Project reverse={true} />
+          <Project reverse={false} />
         </div>
       </div>
     </main>
