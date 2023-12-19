@@ -1,27 +1,20 @@
 import "./index.css";
 
-function Project({ reverse }) {
+function Project({ name, tools, date, description, image, reverse }) {
   return (
     <section className={"project " + (reverse ? "img-right" : "img-left")}>
       <img
         className="project-img"
-        src={process.env.PUBLIC_URL + "/images/hero-background.jpg"}
+        src={process.env.PUBLIC_URL + "/images/project-images/" + image}
         alt="Placeholder"
       />
       <div className="project-content">
-        <h3 className="project-title primary-green">Project Name</h3>
+        <h3 className="project-title primary-green">{name}</h3>
         <div className="project-subtitle light-gray">
-          <span className="project-tools">Tools</span>
-          <span className="project-date">Date</span>
+          <span className="project-tools">{tools}</span>
+          <span className="project-date">{date}</span>
         </div>
-        <p className="project-desc dark-gray">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
+        <p className="project-desc dark-gray">{description}</p>
       </div>
     </section>
   );

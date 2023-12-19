@@ -1,8 +1,13 @@
 import "./index.css";
+import { animateScroll } from "react-scroll";
 
 function Logo() {
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
-    <a className="logo light-gray" href="#">
+    <a className="logo light-gray" href="#" onClick={scrollToTop}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

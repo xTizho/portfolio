@@ -6,11 +6,21 @@
   padding: 3.2rem 0;
 }
 
+.footer-slogan {
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.footer-divider {
+  border-top: 1px solid;
+  width: 3.2rem;
+  margin: 1.6rem auto;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 3.2rem;
-  margin-top: 0.8rem;
 
   font-size: 1.6rem;
   list-style-type: none;

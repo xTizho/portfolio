@@ -15,7 +15,12 @@ function Hero() {
               <strong className="primary-green">Timothy Zhong</strong>.
             </h1>
             <ul className="hero-media">
-              <a href="#" className="tooltip" dataText="Resume">
+              <a
+                href={process.env.PUBLIC_URL + "/data/resume.pdf"}
+                target="_blank"
+                className="tooltip"
+                dataText="Resume"
+              >
                 <ReadCvLogo
                   className="primary-green-hover"
                   size={32}
@@ -23,7 +28,12 @@ function Hero() {
                   weight="fill"
                 />
               </a>
-              <a href="#" className="tooltip" dataText="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/timothy-zhong/"
+                target="_blank"
+                className="tooltip"
+                dataText="LinkedIn"
+              >
                 <LinkedinLogo
                   className="primary-green-hover"
                   size={32}
@@ -31,7 +41,12 @@ function Hero() {
                   weight="fill"
                 />
               </a>
-              <a href="#" className="tooltip" dataText="GitHub">
+              <a
+                href="https://github.com/xTizho"
+                target="_blank"
+                className="tooltip"
+                dataText="GitHub"
+              >
                 <GithubLogo
                   className="primary-green-hover"
                   size={32}

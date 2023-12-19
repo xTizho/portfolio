@@ -1,5 +1,6 @@
 import "./index.css";
 import Logo from "../Logo";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
@@ -8,12 +9,12 @@ function Navbar() {
       <nav>
         <ul className="links">
           <li>
-            <a className="link" href="#projects">
+            <Link className="link" to="projects" smooth={true} duration={500}>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="link" href="#">
+            <a className="link" href="mailto:timothynzhong@gmail.com">
               Contact
             </a>
           </li>

@@ -44,10 +44,12 @@ body {
   color: #212529;
 }
 
+.link,
 .link:any-link {
   color: #f1f3f5;
   text-decoration: none;
   transition: 0.3s all;
+  cursor: pointer;
 }
 
 .link:hover,
